@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fashion Mart</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./landingpage.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Fashion Mart</h2>
+      <nav class="navbar">
+          <a class="home" href="#">Home</a>
+          <a class="profile" href="../Profile/profile.html">My Profile</a>
+          <a class="myCart" href="#">My Cart</a>
+          <a class="logout" href="../Login/login.html">Logout</a>
+      </nav>
+  </header>
+
+  <div class="my-container">
+    <div class="left">
+        <div class="rating">
+            <h3>Filter items</h3>
+            <h4>Rating</h4>
+            <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+            <div class="num">
+                <div>Default</div>
+                <div>5</div>
+            </div>
+        </div>
+        <div class="price-range">
+            <h4>Price</h4>
+            <div class="product-price">
+                <label for=""><input id="checkbox0" type="checkbox"> $0 to $25</label>
+                <label for=""><input id="checkbox25" type="checkbox"> $25 to $50</label>
+                <label for=""><input id="checkbox50" type="checkbox"> $50 to $100</label>
+                <label for=""><input id="checkbox100" type="checkbox"> $100 onwards</label>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div id="snackbar">Item added in your cart!!</div>
+        <div class="search">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Search">
+        </div>
+        <div class="categories">
+            <p class="selectCategories" id="all">All</p>
+            <p class="selectCategories" id="mens">Mens</p>
+            <p class="selectCategories" id="womens">Womens</p>
+            <p class="selectCategories" id="jewellery">Jewellery</p>
+            <p class="selectCategories" id="electronics">Electronics</p>
+        </div>
+        <div class="mens-clothing clothings">
+            <h4>Men's Clothings</h4>
+            <div class="men-card-wrapper wrapper"></div>
+        </div>
+        <div class="womens-clothing clothings">
+            <h4>Women's Clothings</h4>
+            <div class="women-card-wrapper wrapper"></div>
+        </div>
+        <div class="jewellery clothings">
+            <h4>Jewellery</h4>
+            <div class="jewellery-card-wrapper wrapper"></div>
+        </div>
+        <div class="electronics clothings">
+            <h4>Electronics</h4>
+            <div class="electronics-card-wrapper wrapper"></div>
+        </div>
+    </div>
+</div>
+
+  <!-- <div class="container">
+    <div class="left-section">
+      <div class="rating">
+        <h2>Filter Items</h2>
+        <div class="colors">
+          <h4>Colors</h4>
+          <div class="product-price">
+             <label for=""><input type="checkbox" id="checkbox0">Red</label>
+            <label for=""><input type="checkbox" id="checkbox0">Blue</label>
+            <label for=""><input type="checkbox" id="checkbox0">Black</label>
+            <label for=""><input type="checkbox" id="checkbox0">White</label>
+            <label for=""><input type="checkbox" id="checkbox0">Green</label> 
+          </div>
+        </div>
+
+        <div class="sizes">
+          <h4>Sizes</h4>
+          <div class="product-price">
+            <label for=""><input type="checkbox" id="checkbox0">S</label>
+            <label for=""><input type="checkbox" id="checkbox0">M</label>
+            <label for=""><input type="checkbox" id="checkbox0">L</label>
+            <label for=""><input type="checkbox" id="checkbox0">XL</label>
+          </div>
+        </div>
+        
+        <h4>Rating</h4>
+        <input type="range" min="0" max="5" value="0" id="range">
+        <div class="rate-range">
+          <div>Default</div>
+          <div>5</div>
+        </div>
+      </div>
+      <div class="price-range">
+        <h4>Price</h4>
+        <div class="product-price">
+          <label for=""><input id="price0" type="checkbox"> $0 to $25</label>
+          <label for=""><input id="price25" type="checkbox"> $25 to $50</label>
+          <label for=""><input id="price50" type="checkbox"> $50 to $100</label>
+          <label for=""><input id="price100" type="checkbox"> More than $100</label>
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div id="snackbar">Item Added to your Cart!</div>
+      <div class="search">
+        <button class="search-btn">Search</button>
+        <input type="text" class="search" placeholder="Search">
+      </div>
+      <div class="categories">
+        <p class="category" id="all">All</p>
+        <p class="category" id="mens">Mens</p>
+        <p class="category" id="womens">Womens</p>
+        <p class="category" id="jewellery">Jewellery</p>
+        <p class="category" id="electronics">Electronics</p>
+      </div>
+      <div class="mens-cloth clothings">
+        <h4>Men's Clothings</h4>
+        <div class="men-card-wrapper wrapper">
+        </div>
+      </div>
+      <div class="womens-cloth clothings">
+        <h4>Women's Clothings</h4>
+        <div class="women-card-wrapper wrapper"></div>
+      </div>
+      <div class="jewellery clothings">
+        <h4>Jewellery</h4>
+        <div class="jewellery-card-wrapper wrapper"></div>
+      </div>
+      <div class="electronics clothings">
+        <h4>Electronic Items</h4>
+        <div class="electronics-card-wrapper wrapper"></div>
+      </div>
+    </div>
+  </div>  -->
+
+    <script src="./landingpage.js"></script>
+  </body>
+</html>

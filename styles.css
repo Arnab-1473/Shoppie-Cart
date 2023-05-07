@@ -1,0 +1,152 @@
+/* Write styles here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%) no-repeat;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 15px 70px;
+}
+
+.navbar {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 100px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin-left: 40px;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.container {
+    margin: 100px 0 0 ;
+    display: flex;
+    width: 100%;
+}
+
+.left-container {
+    width: 50%;
+    padding: 0 20px 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    height: 450px;
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(51, 51, 226);
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 15px;
+}
+.card-body{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+}
+.cart-image{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+}
+.login-signup{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+#login, #signup{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+#login:hover, #signup:hover{
+    transform: scale(1.2);
+    /* background-color: #555; */
+    color: #444;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #888;
+}
+.right-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-container img{
+    width: 100%;
+}
+
+.add-cart{
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    border-bottom: -10px;
+}
+.add-cart:hover{
+    transform: scale(1.2);
+    /* background-color: #555; */
+    color: #444;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #888;
+}

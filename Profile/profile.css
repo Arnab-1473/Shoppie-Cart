@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Images/profile.avif");
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 15px 70px;
+}
+.navbar{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 100px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin-left: 40px;
+}
+.container{
+    border: 2px solid #0dcddb;
+    width: 320px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 0 50px #e8414100;
+    color: #ffffffc3;
+}
+button{
+    background-color: #162938;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.changePassword{
+    margin: 20px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #c4c5c7;;
+}
+
+.hide{
+    display:none;
+}
+.notification{
+    color: #008000;
+}
+
+.form-text{
+    color: #ff0000;
+}

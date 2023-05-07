@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Mart-My Profile</title>
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+    <header>
+        <h2>Fashion Mart</h2>
+        <nav class="navbar">
+            <a class="home" href="#">Home</a>
+            <a class="profile" href="./profile.html">My Profile</a>
+            <a class="myCart" href="#">My Cart</a>
+            <a class="logout" href="../Login/login.html">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <h3>My Profile</h3>
+            <p>Name : <strong><span class="name"></span></strong></p>
+            <p>Email : <strong><span class="email"></span></strong></p>
+            <p>Password : <strong><span class="user-password"></span></strong></p>
+        </div>
+        <div class="change">
+            <h3>Change Password</h3>
+            <button class="change-password-btn">Click Here</button>
+        </div>
+        <div class="changePassword hide">
+            <div class="notification"></div>
+            <form>
+                <div class="mb-3">                   
+                    <input class="form-control" type="password" id="old-password" placeholder="Old Password">
+                    <div id="oldPassMsg" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">                    
+                    <input class="form-control" type="password" id="new-password" placeholder="New Password">
+                    <div id="newPassMsg" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">                    
+                    <input class="form-control" type="password" id="confirm-new-password" placeholder="Confirm New Password">
+                    <div id="confirmNewPassMsg" class="form-text"></div>
+                  </div>
+
+                  <button type="button" class="btn" id="change" >Change</button>
+                  <button type="button" class="btn" id="logout">Logout</button>
+            </form>
+        </div>
+    </div>
+    <script src="./profile.js"></script>
+</body>
+</html>
