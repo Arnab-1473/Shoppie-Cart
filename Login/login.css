@@ -25,6 +25,7 @@ header{
     left: 0;
     padding: 15px 70px;
 }
+
 .navbar{
     font-size: 1.3rem;
     display: flex;
@@ -104,6 +105,14 @@ header{
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
+.inputbox .icon{
+    /* position: absolute; */
+    /* right: 8px; */
+    font-size: 1.2rem;
+    color: #162938;
+    /* line-height: 57px; */
+    left: 100px;
+}
 
 .forgot{
     font-size: .9rem;
@@ -152,4 +161,51 @@ header{
 }
 .login-register p a:hover{
     text-decoration: underline;
+}
+/* responsive design */
+@media (max-width:430px){
+    .wrapper{
+        margin: 100px 0 40px 0;
+        height: 400px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        border: 2px solid #ffffff70;
+        background: transparent;
+        box-shadow: 0 0 30px #00000000;
+        backdrop-filter: blur(20px);
+        border-radius: 2rem;
+    }
+    header{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        height: 3rem;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        padding: 15px 70px;
+    }
+    header h2{
+        margin-left: -40px;
+        font-size: 1.2rem;
+    }
+    .navbar{
+        font-size: 0.9rem;
+        width: 300px;
+        padding: -15px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: #fff;
+        left: 0;
+    }
+    
 }
